@@ -272,7 +272,7 @@ function prevProject() {
 
 renderProject();
 
-// ------------CONTACTO ------------------- //
+// --------------- CONTACTO ------------------- //
 
 //Formulario
 
@@ -280,19 +280,37 @@ document.querySelector(".contact-form").addEventListener("submit", async (e) => 
   e.preventDefault();
 
   const form = e.target;
+
   const data = new FormData(form);
+
+  // 🔥 IMPORTANTE: Netlify necesita el form-name también aquí
+  data.append("form-name", "contact");
 
   try {
     await fetch("/", {
       method: "POST",
-      body: data
+      body: new URLSearchParams(data).toString(),
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      }
     });
 
-    form.reset(); // limpia el formulario
+    form.reset();
+    showToast("Message sent successfully ✔");
 
-    alert("Mensaje enviado correctamente ✔");
-
-  } catch (error) {
-    alert("Error al enviar el mensaje");
+  } catch (err) {
+    showToast("Error sending message ❌");
   }
 });
+
+// -------------------- TOAST ---------------- //
+
+function showToast(msg) {
+  const toast = document.getElementById("toast");
+  toast.textContent = msg;
+  toast.classList.add("show");
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 2500);
+}
