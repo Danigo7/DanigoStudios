@@ -318,21 +318,17 @@
   </div>
 
   <!-- NETLIFY FORM -->
-  <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form">
+  <form name="contact" method="POST" data-netlify="true" class="contact-form">
 
-    <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="form-name" value="contact" />
 
-    <p hidden>
-      <label>No rellenar: <input name="bot-field" /></label>
-    </p>
+      <input type="text" name="name" placeholder="Nombre" required />
 
-    <input type="text" name="name" placeholder="Nombre" required />
+      <input type="email" name="email" placeholder="Email" required />
 
-    <input type="email" name="email" placeholder="Email" required />
+      <textarea name="message" placeholder="Mensaje" required></textarea>
 
-    <textarea name="message" placeholder="Mensaje" required></textarea>
-
-    <button type="submit">Enviar mensaje</button>
+      <button type="submit">Enviar mensaje</button>
 
   </form>
 </section>
@@ -364,6 +360,10 @@
 
   </div>
 </footer>
+
+<!--TOAST-->
+
+<div id="toast" class="toast"></div>
 
 </body>
 </html>
