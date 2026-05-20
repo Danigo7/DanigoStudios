@@ -1,4 +1,4 @@
- // ---------- NAVBAR ---------- //
+ // -------------------- NAVBAR -------------------- //
 
 const toggle = document.getElementById("menu-toggle");
 const navLinks = document.querySelector(".nav-links");
@@ -29,7 +29,7 @@ links.forEach(link => {
   });
 });
 
-// ---------- BASE GENERAL WEB ---------- //
+// -------------------- BASE GENERAL WEB -------------------- //
 
 //REVEAL
 
@@ -44,7 +44,7 @@ const reveals = document.querySelectorAll('.reveal');
     }, { threshold: 0.12 });
     reveals.forEach(el => revealObserver.observe(el));
 
-// ---------------- SOBRE MI ------------------------- //
+// -------------------- SOBRE MI -------------------- //
 
 function loadScreen(section) {
   const screen = document.getElementById("screen");
@@ -124,7 +124,7 @@ function loadScreen(section) {
 
            <div class="cv-download">
               <img src="img/bodatrivia.webp" alt="Boda trivia Icon">
-              <a href="#bodatrivia">
+              <a href="#">
                 Ver Proyecto
               </a>
             </div>
@@ -133,8 +133,8 @@ function loadScreen(section) {
         <h3>DanigoStudios</h3>
 
            <div class="cv-download">
-              <img src="img/pdf.png" alt="PDF icon">
-              <a href="#powGround">
+              <img src="img/logo_danigo_studios_blanco.png" alt="Logo Danigo Studios">
+              <a href="https://danigostudios.netlify.app/">
                 Ver Proyecto
               </a>
             </div>
@@ -198,8 +198,8 @@ const projects = [
     stack: ["HTML", "CSS", "JAVASCRIPT"],
 
     links: {
-      live: "#",
-      github: "#"
+      live: "https://danigostudios.netlify.app",
+      github: "https://github.com/Danigo7/DanigoStudios"
     }
   }
 
@@ -272,7 +272,7 @@ function prevProject() {
 
 renderProject();
 
-// ------------CONTACTO ------------------- //
+// -------------------- CONTACTO ------------------- //
 
 //Formulario
 
@@ -283,7 +283,7 @@ document.querySelector(".contact-form").addEventListener("submit", async (e) => 
 
   const data = new FormData(form);
 
-  // 🔥 IMPORTANTE: Netlify necesita el form-name también aquí
+  // IMPORTANTE: Netlify necesita el form-name también aquí
   data.append("form-name", "contact");
 
   try {
@@ -303,7 +303,7 @@ document.querySelector(".contact-form").addEventListener("submit", async (e) => 
   }
 });
 
-// -------------------- TOAST ---------------- //
+// -------------------- TOAST -------------------- //
 
 function showToast(msg) {
   const toast = document.getElementById("toast");
@@ -314,3 +314,31 @@ function showToast(msg) {
     toast.classList.remove("show");
   }, 2500);
 }
+
+
+// -------------------- BOTON SUBIR -------------------- //
+
+const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+// Mostrar / ocultar botón
+
+window.addEventListener("scroll", () => {
+
+  if (window.scrollY > 300) {
+    scrollTopBtn.classList.add("show");
+  } else {
+    scrollTopBtn.classList.remove("show");
+  }
+
+});
+
+// Subir arriba suave
+
+scrollTopBtn.addEventListener("click", () => {
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+
+});
