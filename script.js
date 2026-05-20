@@ -271,3 +271,28 @@ function prevProject() {
 }
 
 renderProject();
+
+// ------------CONTACTO ------------------- //
+
+//Formulario
+
+document.querySelector(".contact-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const form = e.target;
+  const data = new FormData(form);
+
+  try {
+    await fetch("/", {
+      method: "POST",
+      body: data
+    });
+
+    form.reset(); // limpia el formulario
+
+    alert("Mensaje enviado correctamente ✔");
+
+  } catch (error) {
+    alert("Error al enviar el mensaje");
+  }
+});
