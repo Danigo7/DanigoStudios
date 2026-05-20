@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Danigo Studios — Creative software development, web experiences and digital products." />
+  <meta name="keywords"
+    content="frontend developer, web development, creative coding, portfolio, UI design, JavaScript, React" />
+  <meta property="og:title" content="Danigo Studios — Creative Developer Portfolio" />
+  <meta property="og:description"
+    content="Creative developer portfolio featuring interactive web experiences, modern frontend development, and digital product design." />
+  <meta property="og:type" content="website" />
+  <meta name="author" content="Danigo Studios" />
+  <link rel="icon" href="img/favicon_io/favicon.ico" />
+  <link rel="stylesheet" href="style.css">
+  <script defer src="scripten.js"></script>
+  <title>Danigo Studios — Creative Developer Portfolio</title>
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+   
+<header>
+  <nav>
+
+    <!-- LOGO -->
+    <div class="logo">
+      <a href="#inicio">
+        <img 
+          src="img/logo_danigo_studios_blanco.png"
+          alt="Logo Danigo Studios"
+          title="Danigo Studios"
+        >
+        <span>Danigo Studios</span>
+      </a>
+    </div>
+
+    <!-- LINKS -->
+    <ul class="nav-links">
+      <li><a href="#inicio">Home</a></li>
+      <li><a href="#sobre-mi">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#proyectos">Proyects</a></li>
+      <li><a href="#formacion">Formation</a></li>
+      <li><a href="#contacto">Contact</a></li>
+    </ul>
+
+    <!-- CONTROLES DERECHA -->
+    <div class="right-controls">
+
+      <!-- Idioma -->
+      <div class="idioma">
+        <button onclick="window.location.href='main.html'">
+          <img src="img/espana.png" alt="Español">
+        </button>
+
+        <button onclick="window.location.href='en.html'">
+          <img src="img/reino-unido.png" alt="English">
+        </button>
+      </div>
+
+      <!-- Menu hamburguesa -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+        ☰
+      </button>
+
+    </div>
+
+  </nav>
+</header>
+
+
+  <!-- ================= HERO ================= -->
+
+  <section id="inicio" class="reveal">
+
+      <div class="container">
+
+        <div class="hero-bg" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          
+
+
+          <div class="hero-badge" role="status" aria-live="polite">
+            <span class="hero-badge-dot" aria-hidden="true"></span>
+            <span>Creative Developer & DAM Student</span>
+          </div>
+
+          <h1 class="hero-title" id="hero-title">
+            Software development,<br>
+            web experiences & creative projects<br>
+            <em class="italic gold">built from curiosity</em>
+          </h1>
+
+          <p class="hero-sub">
+           Currently studying DAM while building web projects,
+           backend systems, and modern digital experiences.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#proyectos" class="btn-primary" role="button">
+              <span>✨</span> See proyects
+            </a>
+            <a href="#contacto" class="btn-secondary" role="button">
+              <span>▶</span> Contact
+            </a>
+          </div></div></div>
+
+  </section>
+  
+  <!-- ================= SOBRE MÍ ================= -->
+
+  <section id="sobre-mi" class="reveal">
+
+    <div class="about-bg" aria-hidden="true"></div>
+
+  
+    <div class="sobremi-content">
+
+  <h2>About me</h2>
+
+  <div class="phone">
+
+    <!-- TOP BAR -->
+    <div class="phone-top">
+      <div class="phone-logo"><em>DanigoStudios</em></div>
+      <img src="img/favicon.png" class="phone-avatar">
+    </div>
+
+    <!-- SCREEN -->
+    <div class="phone-screen" id="screen">
+      <h3>Welcome 👋</h3>
+      <br>
+      <p>Select an option from the menu.</p>
+      <img class="home-logo" alt="logo" title="logo" src="img/logo_danigo_studios_blanco.png">
+    </div>
+
+    <!-- MENU -->
+    <div class="phone-menu">
+      <button onclick="loadScreen('about')">✨ About me</button>
+      <button onclick="loadScreen('cv')">📄 CV</button>
+      <button onclick="loadScreen('video')">🎥 VideoCV</button>
+      <button onclick="loadScreen('futuro')">🎯 Future</button>
+      <button onclick="loadScreen('proyectos')">🚀 Proyects</button>
+      <button onclick="loadScreen('home')">🔙 Back</button>
+    </div>
+
+  </div>
+
+</div>
+
+  </section>
+
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="reveal">
+
+  <div class="skills-bg"></div>
+
+  <div class="skills-content">
+
+    <h2>Skills & Stack</h2>
+
+    <p class="skills-sub">
+      Technologies and tools I use to build digital experiences.
+    </p>
+
+    <div class="skills-grid">
+
+      <!-- CARD -->
+      <div class="skill-card">
+        <img src="img/html.png" alt="HTML">
+        <h3>HTML5</h3>
+        <span>Frontend</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="img/css.png" alt="CSS">
+        <h3>CSS3</h3>
+        <span>UI & Animations</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="img/javascript.png" alt="JS">
+        <h3>JavaScript</h3>
+        <span>Interactive Logic</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="img/java.png" alt="Java">
+        <h3>Java</h3>
+        <span>Backend</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="img/mysql.png" alt="MySQL">
+        <h3>MySQL</h3>
+        <span>Database</span>
+      </div>
+
+      <div class="skill-card">
+        <img src="img/git.png" alt="Git">
+        <h3>Git</h3>
+        <span>Version Control</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+  <!-- ================= PROYECTOS ================= -->
+ 
+  
+  <section id="proyectos" class="reveal">
+
+  <div class="projects-bg"></div>
+
+  <div class="projects-content">
+
+    <h2>PROYECTS</h2>
+
+    <!-- TV -->
+
+    <div class="tv-wrapper">
+
+      <!-- BOTON IZQ -->
+
+      <button class="tv-arrow left" onclick="prevProject()">
+        ←
+      </button>
+
+      <!-- PANTALLA -->
+
+      <div class="tv-screen">
+
+        <div class="tv-content" id="tv-content">
+
+          <!-- Aquí cambia el contenido -->
+
+        </div>
+
+      </div>
+
+      <!-- BOTON DER -->
+
+      <button class="tv-arrow right" onclick="nextProject()">
+        →
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+  <!-- ================= FORMACIÓN ================= -->
+  <section id="formacion" class="reveal">
+
+  <div class="education-bg"></div>
+
+  <div class="education-content">
+
+    <h2>Formation</h2>
+
+    <div class="education-card">
+
+      <div class="education-status">
+        🎓 In progress
+      </div>
+
+      <h3>Multiplatform Application Development</h3>
+
+      <p>
+       Vocational training focused on software development,
+       cross-platform applications, and the fundamentals of modern programming.
+      </p>
+
+      <div class="education-tags">
+        <span>Java</span>
+        <span>SQL</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+      </div>
+
+      <div class="education-footer">
+        <span>📍 Spain</span>
+        <span>⏳ 2025 - At the moment</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+  <!-- ================= CONTACTO ================= -->
+  
+  <section id="contacto" class="reveal">
+  <h2>Contact</h2>
+
+  <p class="contact-sub">
+    
+    Want to get in touch? Write to me or use the form 👇
+
+  </p>
+
+  <div class="social-links">
+    <a href="https://github.com/Danigo7" target="_blank">GitHub</a>
+    <a href="#" target="_blank">LinkedIn</a>
+  </div>
+
+  <!-- NETLIFY FORM -->
+  <form name="contact" method="POST" data-netlify="true" class="contact-form">
+
+    <!-- obligatorio para Netlify -->
+    <input type="hidden" name="form-name" value="contact" />
+
+    <input type="text" name="name" placeholder="Nombre" required />
+
+    <input type="email" name="email" placeholder="Email" required />
+
+    <textarea name="message" placeholder="Mensaje" required></textarea>
+
+    <button type="submit">Send message</button>
+
+  </form>
+</section>
+
+
+  <!-- ================= FOOTER ================= -->
+
+
+  <footer class="footer">
+  <div class="footer-container">
+
+    <!-- Logo + nombre -->
+    <div class="footer-brand">
+      <img src="img/logo_danigo_studios_blanco.png" alt="Danigo Studios logo">
+      <span>Danigo Studios</span>
+    </div>
+
+    <!-- Texto -->
+    <p class="footer-text">
+      © 2026 Danigo Studios · Designed and developed by Dani
+    </p>
+
+    <!-- Links opcionales -->
+    <div class="footer-links">
+      <a href="#inicio">Home</a>
+      <a href="#proyectos">Proyects</a>
+      <a href="#contacto">Contact</a>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>
