@@ -90,11 +90,11 @@ function loadScreen(section) {
       <div class="video-box">
         <div class="video-switch">
           <button onclick="loadVideo(1)" class="video-btn">
-            <img src="img/espana.png" alt="Video 1">
+            <img src="img/espana.png" alt="Video Español">
           </button>
 
           <button onclick="loadVideo(2)" class="video-btn">
-            <img src="img/reino-unido.png" alt="Video 2">
+            <img src="img/reino-unido.png" alt="Video Ingles">
           </button>
         </div>
 
@@ -123,7 +123,7 @@ function loadScreen(section) {
         <h3>WeMarry</h3>
 
            <div class="cv-download">
-              <img src="img/bodatrivia.webp" alt="Boda trivia Icon">
+              <img src="img/bodatrivia.webp" alt="WeMarry Icon">
               <a href="#">
                 Ver Proyecto
               </a>
