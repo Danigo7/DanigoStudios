@@ -181,7 +181,7 @@ const projects = [
 
   {
     title: "WeMarry",
-    desc: "Wedding app where guests answer questions about the couple until they guess them all and unlock the wedding gift.",
+    desc: "Wedding app where guests answer questions about the couple until they guess them all and unlock the wedding gift experience.",
     image: "img/bodatrivia.png",
     stack: ["Java", "XML"],
 
@@ -200,6 +200,18 @@ const projects = [
     links: {
       live: "https://danigostudios.netlify.app",
       github: "https://github.com/Danigo7/DanigoStudios"
+    }
+  },
+
+  {
+    title: "Tenaskis",
+    desc: "Website for a company specializing in handcrafted ski manufacturing, designed with a Supabase database and a CMS admin panel. Currently in development.",
+    image: "img/tena-skis.png",
+    stack: ["REACT", "TYPESCRIPT", "JAVASCRIPT", "NEXTJS", "SUPABASE", "TAILWINDCSS", "HTML", "CSS", "SQL"],
+
+    links: {
+      live: "https://tenaskis.netlify.app",
+      github: "https://github.com/Danigo7/tenaski-web"
     }
   }
 

@@ -201,6 +201,18 @@ const projects = [
       live: "https://danigostudios.netlify.app",
       github: "https://github.com/Danigo7/DanigoStudios"
     }
+  },
+
+  {
+    title: "Tenaskis",
+    desc: "Página web de una empresa de fabriación de esquis artesanales, diseñada con base de datos en supabase, panel de administración CMS. Actualmente en desarrollo.",
+    image: "img/tena-skis.png",
+    stack: ["REACT", "TYPESCRIPT", "JAVASCRIPT", "NEXTJS", "SUPABASE", "TAILWINDCSS", "HTML", "CSS","SQL"],
+
+    links: {
+      live: "https://tenaskis.netlify.app",
+      github: "https://github.com/Danigo7/tenaski-web"
+    }
   }
 
 ];
